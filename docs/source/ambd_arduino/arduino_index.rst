@@ -17,3 +17,4 @@ Arduino SDK
    AMB23/index
    BW16_/index
    BW16-TypeC/index
+   AW-CU488_Thing_Plus/index

@@ -9,9 +9,9 @@ WS2812B - Basics
 **Materials**
 :raw-html:`</p>`
 
--  AmebaD [ AMB21 / AMB22 / AMB23 / BW16 ] x1
+- AmebaD [ AMB21 / AMB22 / AMB23 / BW16 ] x1
 
--  WS2812B LED Strip / Ring / Stick / Board x1
+- WS2812B LED Strip / Ring / Stick / Board x1
 
 :raw-html:`<p style="color:#E67E22; font-size:24px">`
 **Example**
@@ -110,6 +110,15 @@ individually and after a while all the LED will be filled with a color.
 https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf
 
 
+`<https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf>`_
 
 
-
++---+---------+---------+-----+-----+--------+
+|#  |GPIO Pin | GPIO INT| ADC |PWM  |  UART  |
++===+=========+=========+=====+=====+========+
+|0  |   PA7   |    ✓    |     |     | LOG_TX |
++---+---------+---------+-----+-----+--------+
+|0  |   PA7   |    ✓    |     |     | LOG_TX |
++---+---------+---------+-----+-----+--------+
+|0  |   PA7   |    ✓    |     |     | LOG_TX |
++---+---------+---------+-----+-----+--------+

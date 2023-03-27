@@ -1,0 +1,1 @@
+.. include:: ../../api_class/Class Adafruit_GPS.rst

@@ -28,6 +28,7 @@ Welcome to Ameba IoT Family Online SDK Documentation!
    download/AMB21_download
    download/AMB23_download
    download/BW16_download
+   download/AW-CU488_download
 
 .. tip::
    

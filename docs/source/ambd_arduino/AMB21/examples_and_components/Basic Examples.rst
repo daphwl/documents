@@ -2,23 +2,18 @@
 Basic Examples
 ###############
 
-.. role:: raw-html(raw)
-   :format: html
-
-:raw-html:`<h1 style="color:#000000; font-size:20px">`
 AMB21/AMB22 Supported ARDUINO built-in example table
-:raw-html:`</h1>`
+-------------------------------------------------------
 
-:raw-html:`<p style="color:#E67E22; font-size:18px">`
 There are many built-in examples in Arduino. In the table below, we list
 all examples that are compatible with Ameba.
-:raw-html:`</p>`
 
-| Please refer to the following link to set up Ameba for Arduino IDE:
-| `<https://www.amebaiot.com/en/amebad-arduino-getting-started/>`_
 
-| Please refer to the following link for Arduino built-in example details:
-| `<https://www.arduino.cc/en/Tutorial/BuiltInExamples/>`_
+Please refer to the following link to set up Ameba for Arduino IDE:
+https://www.amebaiot.com/en/amebad-arduino-getting-started/
+
+Please refer to the following link for Arduino built-in example details:
+https://www.arduino.cc/en/Tutorial/BuiltInExamples/
 
 
 +----------------+---------------------+------------------------+--------------------+
@@ -26,184 +21,175 @@ all examples that are compatible with Ameba.
 +================+=====================+========================+====================+
 | 01.            | AnalogReadSerial    | Connect potentiometer  | ADC pin options    |
 | Basics         |                     | to 3.3V.               | A0, A1, A2, A3,    |
-|                |                     |                        | A4, A5 and A6. ADC |
-|                |                     |                        | pin reading        |
+|                |                     | ADC pin used, up to    | A4, A5 and A6. ADC |
+|                |                     | 3.3V                   | pin reading        |
 |                |                     |                        | voltage range 0 to |
 |                |                     |                        | 3.3V.              |
 +----------------+---------------------+------------------------+--------------------+
 |                | BareMinimum         |                        |                    |
 +----------------+---------------------+------------------------+--------------------+
-|                | Blink               | Pin LED_BUILTIN sets   |                    |
-|                |                     | to pin D8.             |                    |
+|                | Blink               | LED_BUILTIN sets       |                    |
+|                |                     | to pin 8.              |                    |
 +----------------+---------------------+------------------------+--------------------+
 |                | DigitalReadSerial   |                        |                    |
 +----------------+---------------------+------------------------+--------------------+
-|                | Fade                |                        |                    |
+|                | Fade                | For "analogWrite", use |                    |
+|                |                     | PWM capable pin        |                    |
 +----------------+---------------------+------------------------+--------------------+
-|                | ReadAnalogVoltage   |                        | ADC pin options    |
-|                |                     |                        | A0, A1, A2, A3,    |
-|                |                     |                        | A4, A5 and A6. ADC |
-|                |                     |                        | pin reading        |
-|                |                     |                        | voltage range 0 to |
-|                |                     |                        | 3.3V.              |
+|                | ReadAnalogVoltage   | ADC pin used, up to    |                    |
+|                |                     | 3.3V                   |                    |
 +----------------+---------------------+------------------------+--------------------+
-| 02.            | BlinkWithoutDelay   | Pin LED_BUILTIN sets   |                    |
-| Digital        |                     | to pin D8.             |                    |
+| 02.            | BlinkWithoutDelay   | LED_BUILTIN sets       |                    |
+| Digital        |                     | to pin 8.              |                    |
 |                |                     |                        |                    |
 +----------------+---------------------+------------------------+--------------------+
-|                | Button              | Connect LED to pin     |                    |
-|                |                     | D13.                   |                    |
-+----------------+---------------------+------------------------+--------------------+
-|                | Debounce            | Connect LED to pin     |                    |
-|                |                     | D13.                   |                    |
-+----------------+---------------------+------------------------+--------------------+
-|                | Digital             | Connect LED to pin     |                    |
-|                | InputPullup         | D13.                   |                    |
-+----------------+---------------------+------------------------+--------------------+
-|                | StateChange         | Connect LED to pin     |                    |
-|                | Detection           | D13.                   |                    |
-+----------------+---------------------+------------------------+--------------------+
-|                | toneKeyboard        |                        |                    |
+|                | Button              |                        |                    |
 |                |                     |                        |                    |
 +----------------+---------------------+------------------------+--------------------+
-|                | toneMelody          |                        |                    |
-+----------------+---------------------+------------------------+--------------------+
-|                | toneMultiple        |                        |                    |
+|                | Debounce            |                        |                    |
 |                |                     |                        |                    |
 +----------------+---------------------+------------------------+--------------------+
-|                | tonePitch           |                        |                    |
+|                | Digital             |                        |                    |
+|                | InputPullup         |                        |                    |
++----------------+---------------------+------------------------+--------------------+
+|                | StateChange         |                        |                    |
+|                | Detection           |                        |                    |
++----------------+---------------------+------------------------+--------------------+
+|                | toneKeyboard        | ADC pin used, up to    |                    |
+|                |                     | 3.3V.                  |                    |
++----------------+---------------------+ For "analogRead()",    +--------------------+
+|                | toneMelody          | use ADC pin name (A0   |                    |
++----------------+---------------------+ to A6) instead the     +--------------------+
+|                | toneMultiple        | integer number.        |                    |
+|                |                     | For "tone()" and       |                    |
++----------------+---------------------+ "noTone()", use        +--------------------+
+|                | tonePitch           | PWM capable pin.       |                    |
 |                | Follower            |                        |                    |
 +----------------+---------------------+------------------------+--------------------+
-| 03.            | Analog              |                        | ADC pin options    |
-| Analog         | InOutSerial         |                        | A0, A1, A2, A3,    |
-|                |                     |                        | A4, A5 and A6. ADC |
-|                |                     |                        | pin reading        |
-|                |                     |                        | voltage range 0 to |
-|                |                     |                        | 3.3V.              |
-+----------------+---------------------+------------------------+--------------------+
-|                | AnalogInput         | Connect LED to pin     | ADC pin options    |
-|                |                     | D13.                   | A0, A1, A2, A3,    |
-|                |                     |                        | A4, A5 and A6. ADC |
-|                |                     |                        | pin reading        |
-|                |                     |                        | voltage range 0 to |
-|                |                     |                        | 3.3V.              |
-+----------------+---------------------+------------------------+--------------------+
+| 03.            | Analog              | ADC pin used, up to    |                    |
+| Analog         | InOutSerial         | 3.3V.                  |                    |
+|                |                     | For "analogWrite()",   |                    |
+|                |                     | use PWM capable pin.   |                    |
+|                |                     |                        |                    |
+|                |                     |                        |                    |
++----------------+---------------------+                        +--------------------+
+|                | AnalogInput         |                        |                    |
+|                |                     |                        |                    |
+|                |                     |                        |                    |
+|                |                     |                        |                    |
+|                |                     |                        |                    |
+|                |                     |                        |                    |
++----------------+---------------------+                        +--------------------+
 |                | Analog              |                        |                    |
 |                | Write Mega          |                        |                    |
-+----------------+---------------------+------------------------+--------------------+
-|                | Calibration         | Connect another LED to | ADC pin options    |
-|                |                     | pin D13.               | A0, A1, A2, A3,    |
-|                |                     |                        | A4, A5 and A6. ADC |
-|                |                     |                        | pin reading        |
-|                |                     |                        | voltage range 0 to |
-|                |                     |                        | 3.3V.              |
-+----------------+---------------------+------------------------+--------------------+
++----------------+---------------------+                        +--------------------+
+|                | Calibration         |                        |                    |
+|                |                     |                        |                    |
+|                |                     |                        |                    |
+|                |                     |                        |                    |
+|                |                     |                        |                    |
+|                |                     |                        |                    |
++----------------+---------------------+                        +--------------------+
 |                | Fading              |                        |                    |
-+----------------+---------------------+------------------------+--------------------+
-|                | Smoothing           |                        | ADC pin options    |
-|                |                     |                        | A0, A1, A2, A3,    |
-|                |                     |                        | A4, A5 and A6. ADC |
-|                |                     |                        | pin reading        |
-|                |                     |                        | voltage range 0 to |
-|                |                     |                        | 3.3V.              |
++----------------+---------------------+                        +--------------------+
+|                | Smoothing           |                        |                    |
+|                |                     |                        |                    |
+|                |                     |                        |                    |
+|                |                     |                        |                    |
+|                |                     |                        |                    |
+|                |                     |                        |                    |
 +----------------+---------------------+------------------------+--------------------+
 | 04.            | ASCIITable          |                        |                    |
 | Communication  |                     |                        |                    |
 |                |                     |                        |                    |
 |                |                     |                        |                    |
 +----------------+---------------------+------------------------+--------------------+
-|                | Dimmer              |                        |                    |
+|                | Dimmer              | For "analogWrite()",   |                    |
+|                |                     | use PWM capable pin    |                    |
 +----------------+---------------------+------------------------+--------------------+
-|                | Graph               | Connect potentiometer  | ADC pin options    |
-|                |                     | to 3.3V.               | A0, A1, A2, A3,    |
-|                |                     |                        | A4, A5 and A6. ADC |
-|                |                     |                        | pin reading        |
-|                |                     |                        | voltage range 0 to |
-|                |                     |                        | 3.3V.              |
+|                | Graph               | Connect potentiometer  |                    |
+|                |                     | to 3.3V.               |                    |
+|                |                     | ADC pin used, up to    |                    |
+|                |                     | 3.3V                   |                    |
+|                |                     |                        |                    |
+|                |                     |                        |                    |
 +----------------+---------------------+------------------------+--------------------+
-|                | Midi                | Use Serial1 and pin    |                    |
-|                |                     | D26, or use Serial2    |                    |
-|                |                     | and pin D17.           |                    |
+|                | Midi                | Use Serial1, MIDI jack |                    |
+|                |                     | pin 5 connected to     |                    |
+|                |                     | SERIAL1_TX;            |                    |
+|                |                     | Use Serial2, MIDI jack |                    |
+|                |                     | pin 5 connected to     |                    |
+|                |                     | SERIAL2_TX;            |                    |
 +----------------+---------------------+------------------------+--------------------+
 |                | MultiSerial         |                        |                    |
 +----------------+---------------------+------------------------+--------------------+
 |                | PhysicalPixel       |                        |                    |
 |                |                     |                        |                    |
 +----------------+---------------------+------------------------+--------------------+
-|                | Read                |                        |                    |
-|                | ASCIIString         |                        |                    |
+|                | Read                | For "analogWrite()",   |                    |
+|                | ASCIIString         | use PWM capable pin    |                    |
 +----------------+---------------------+------------------------+--------------------+
-|                | SerialCallResponse  |                        | ADC pin options    |
-|                |                     |                        | A0, A1, A2, A3,    |
-|                |                     |                        | A4, A5 and A6. ADC |
-|                |                     |                        | pin reading        |
-|                |                     |                        | voltage range 0 to |
-|                |                     |                        | 3.3V.              |
+|                | SerialCallResponse  | ADC pin used, up to    |                    |
+|                |                     | 3.3V                   |                    |
+|                |                     | For "analogRead()", use|                    |
+|                |                     | ADC pin name (A0 to A6)|                    |
+|                |                     | instead the integer    |                    |
+|                |                     | number.                |                    |
 +----------------+---------------------+------------------------+--------------------+
-|                | SerialCallResponse  |                        | ADC pin options    |
-|                | ASCII               |                        | A0, A1, A2, A3,    |
-|                |                     |                        | A4, A5 and A6. ADC |
-|                |                     |                        | pin reading        |
-|                |                     |                        | voltage range 0 to |
-|                |                     |                        | 3.3V.              |
+|                | SerialCallResponse  | ADC pin used, up to    |                    |
+|                | ASCII               | 3.3V.                  |                    |
+|                |                     |                        |                    |
+|                |                     |                        |                    |
+|                |                     |                        |                    |
+|                |                     |                        |                    |
 +----------------+---------------------+------------------------+--------------------+
 |                | SerialEvent         |                        |                    |
 +----------------+---------------------+------------------------+--------------------+
 |                | Serial              |                        | Serial options,    |
-|                | Passthrough         |                        | Serial1 or         |
+|                | Passthrough         |                        | Serial Serial1 or  |
 |                |                     |                        | Serial2.           |
 +----------------+---------------------+------------------------+--------------------+
-|                | Virtual             |                        | ADC pin options    |
-|                | ColorMixer          |                        | A0, A1, A2, A3,    |
-|                |                     |                        | A4, A5 and A6. ADC |
-|                |                     |                        | pin reading        |
-|                |                     |                        | voltage range 0 to |
-|                |                     |                        | 3.3V.              |
-+----------------+---------------------+------------------------+--------------------+
-| 05.            | Arrays              | Use pins D1, D2, D3,   |                    |
-| Control        |                     | D4, D5, D6.            |                    |
+|                | Virtual             | ADC pin used, up to    |                    |
+|                | ColorMixer          | 3.3V                   |                    |
+|                |                     |                        |                    |
+|                |                     |                        |                    |
+|                |                     |                        |                    |
 |                |                     |                        |                    |
 +----------------+---------------------+------------------------+--------------------+
-|                | ForLoop             | Use pins D1, D2, D3,   |                    |
-|                | Iteration           | D4, D5, D6.            |                    |
+| 05.            | Arrays              | ADC pin used, up to    |                    |
+| Control        |                     | 3.3V.                  |                    |
+|                |                     | Pin 7 is NC, replace it|                    |
++----------------+---------------------+ with another pin.      +--------------------+
+|                | ForLoop             | For "analogWrite()",   |                    |
+|                | Iteration           | use PWM capable pin.   |                    |
++----------------+---------------------+                        +--------------------+
+|                | IfStatement         |                        |                    |
+|                | Conditional         |                        |                    |
+|                |                     |                        |                    |
+|                |                     |                        |                    |
+|                |                     |                        |                    |
+|                |                     |                        |                    |
++----------------+---------------------+                        +--------------------+
+|                | switchCase          |                        |                    |
+|                |                     |                        |                    |
+|                |                     |                        |                    |
+|                |                     |                        |                    |
+|                |                     |                        |                    |
+|                |                     |                        |                    |
++----------------+---------------------+                        +--------------------+
+|                | switchCase2         |                        |                    |
+|                |                     |                        |                    |
++----------------+---------------------+                        +--------------------+
+|                | While               |                        |                    |
+|                | Statement           |                        |                    |
+|                | Conditional         |                        |                    | 
 +----------------+---------------------+------------------------+--------------------+
-|                | IfStatement         |                        | ADC pin options    |
-|                | Conditional         |                        | A0, A1, A2, A3,    |
-|                |                     |                        | A4, A5 and A6. ADC |
-|                |                     |                        | pin reading        |
-|                |                     |                        | voltage range 0 to |
-|                |                     |                        | 3.3V.              |
-+----------------+---------------------+------------------------+--------------------+
-|                | switchCase          |                        | ADC pin options    |
-|                |                     |                        | A0, A1, A2, A3,    |
-|                |                     |                        | A4, A5 and A6. ADC |
-|                |                     |                        | pin reading        |
-|                |                     |                        | voltage range 0 to |
-|                |                     |                        | 3.3V.              |
-+----------------+---------------------+------------------------+--------------------+
-|                | switchCase2         | Use pins D1, D2, D3,   |                    |
-|                |                     | D4, D5, D6.            |                    |
-+----------------+---------------------+------------------------+--------------------+
-|                | While               | Connect another LED to | ADC pin options    |
-|                | Statement           | pin D13.               | A0, A1, A2, A3,    |
-|                | Conditional         |                        | A4, A5 and A6. ADC |
-|                |                     |                        | pin reading        |
-|                |                     |                        | voltage range 0 to |
-|                |                     |                        | 3.3V.              |
-+----------------+---------------------+------------------------+--------------------+
-| 06.            | barGraph            | Use another pin to     | ADC pin options    |
-| Display        |                     | replace pin D7.        | A0, A1, A2, A3,    |
-|                |                     |                        | A4, A5 and A6. ADC |
-|                |                     |                        | pin reading        |
-|                |                     |                        | voltage range 0 to |
-|                |                     |                        | 3.3V.              |
-+----------------+---------------------+------------------------+--------------------+
-|                | RowColumn           |                        | ADC pin options    |
-|                | Scanning            |                        | A0, A1, A2, A3,    |
-|                |                     |                        | A4, A5 and A6. ADC |
-|                |                     |                        | pin reading        |
-|                |                     |                        | voltage range 0 to |
-|                |                     |                        | 3.3V.              |
+| 06.            | barGraph            | ADC pin used, up to    |                    |
+| Display        |                     | 3.3V                   |                    |
+|                |                     | Pin 7 is NC, replace it|                    |
++----------------+---------------------+ with another pin       +--------------------+
+|                | RowColumn           |                        |                    |
+|                | Scanning            |                        |                    |
 +----------------+---------------------+------------------------+--------------------+
 | 07.            | Character           |                        |                    |
 | Strings        | Analysis            |                        |                    |
@@ -221,12 +207,8 @@ all examples that are compatible with Ameba.
 |                | String              |                        |                    |
 |                | Characters          |                        |                    |
 +----------------+---------------------+------------------------+--------------------+
-|                | StringComparision   |                        | ADC pin options    |
-|                | Operators           |                        | A0, A1, A2, A3,    |
-|                |                     |                        | A4, A5 and A6. ADC |
-|                |                     |                        | pin reading        |
-|                |                     |                        | voltage range 0 to |
-|                |                     |                        | 3.3V.              |
+|                | StringComparision   | ADC pin used, up to    |                    |
+|                | Operators           | 3.3V                   |                    |
 +----------------+---------------------+------------------------+--------------------+
 |                | StringIndexOf       |                        |                    |
 |                |                     |                        |                    |

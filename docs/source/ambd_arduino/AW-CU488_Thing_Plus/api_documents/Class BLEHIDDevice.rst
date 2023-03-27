@@ -1,0 +1,1 @@
+.. include:: ../../api_class/Class BLEHIDDevice.rst

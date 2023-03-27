@@ -1,0 +1,1 @@
+.. include:: ../../api_class/Class WS2812B.rst

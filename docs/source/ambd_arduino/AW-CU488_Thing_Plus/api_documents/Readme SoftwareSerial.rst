@@ -1,0 +1,1 @@
+.. include:: ../../api_class/Readme SoftwareSerial.rst

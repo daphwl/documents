@@ -1,0 +1,1 @@
+.. include:: ../../api_class/Class AmebaILI9341.rst
